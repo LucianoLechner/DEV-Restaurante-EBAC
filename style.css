@@ -1,0 +1,139 @@
+body{
+    font-family: "roboto", sans-serif;
+}
+
+
+.navbar {
+    background-color: #e15f41;
+
+    & .nav .nav-link, .navbar-brand{
+        color: white;
+    }
+
+    & .nav .nav-link.active {
+        background-color: white;
+        color: #e15f41;
+    }
+
+    .navbar-brand:hover{
+        color: white;
+    }
+
+    
+    .navbar-toggler{
+    background-color: white;
+    }
+}
+
+.section-tittle{
+    font-family: "pacifico", cursive;
+}
+
+.section-tittle span{
+    color: #e15f41;
+}
+
+#sobre-o-restaurante, .cardapio-bg{
+    background-color: #ffeae6;
+}
+
+.text-colored{
+    color: #e15f41;
+    text-decoration: none;
+}
+
+.nav-cardapio {
+    
+    & button {
+        color: #e15f41;
+    }
+}
+
+.nav-cardapio .nav-link.active{
+    background-color: #e15f41 !important;
+    color: white !important;
+}
+
+.nav-cardapio .nav-link:hover{
+    color: #e15f41 !important;
+}
+
+.nav-cardapio .nav-link.active:hover{
+    color: #ffffff !important;
+}
+
+
+
+.social-links li{
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.resize{
+    resize: none;
+}
+
+.form-btn button{
+    background-color: #e15f41;
+    color: white;
+    border: none;
+}
+
+.form-btn button:hover{
+    background-color: #e15f41;
+    color: white;
+    border: none;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+@media (max-width: 576px) {
+
+    .textcenter{
+        text-align: center;
+
+        & h2,h3 {
+            padding: 8px 0;
+        }
+        
+
+        & p{
+            text-align: justify;
+        }
+
+        & li{
+            list-style: none;
+        }
+    }
+
+    .eventclass{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & .event-descript{
+            display: flex;
+            flex-direction: column;
+
+            & h3{    
+                width: 100%;
+                padding: 5px auto 5px auto;
+            }
+
+            & p{
+                text-align: justify;
+                width: 100%;
+                padding: 5px auto 10px auto;
+            }
+        }
+    }
+
+    #fale-conosco .container-faleconosco{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 40px 0 20px 0;
+    }
+}
